@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filterWebsite</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+        <p>This is Filter Webiste And it's filter Data By Their Profession</p>
+        <select style="padding: 8px; border-radius: 5px;">
+            <option value="">Profession</option>
+            <option value="Admin">Admin</option>
+            <option value="Developer">Developer</option>
+        </select>
+
+        <div class="container">
+            <div class="users">
+               <div class="user">
+                 <div class="id">1</div>
+                 <div class="name">john</div>
+                 <div class="profession">Developer</div>
+                 <div class="age">22</div>
+               </div>
+            </div>
+        </div>
+
+       
+        <button onclick="filter()">Filter-Users</button>
+        
+       
+        <div class="Take" style="display: flex; justify-content: space-around; padding: 10px " >
+            <div>
+                <div>
+                 <label for="Age">Age</label>
+               </div>
+                 <input  type="number" id="age">
+            </div>
+            <div>
+                <div>
+                 <label for="name">Name</label>
+               </div>
+                 <input type="text" id="name">
+            </div>
+             <div>
+                <div>
+                 <label for="profession">Profession</label>
+                </div>
+                 <input type="text" id="profession">
+             </div>
+        </div>
+
+        
+
+         <button onclick="addNewUser()">AddUser</button>
+</body>
+</html>
